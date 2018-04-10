@@ -21,6 +21,16 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'faker'
+  gem 'pry-rails'
+  gem 'pry-doc'
+  gem 'pry-stack_explorer'
+  gem 'pry-byebug'
+  gem 'pry-alias'
+  gem 'pry-rescue'
+  gem 'dotenv-rails'
+  gem 'bundler-audit', require: false
+  gem 'brakeman', require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
