@@ -2,15 +2,15 @@ FactoryBot.define do
   factory :programming_language do
 
     trait :kotlin do
-      code "kotlin"
+      name "kotlin"
     end
 
     trait :java do
-      code "java"
+      name "java"
     end
 
     trait :ruby do
-      code "ruby"
+      name "ruby"
     end
 
   end
