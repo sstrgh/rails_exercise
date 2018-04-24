@@ -2,12 +2,12 @@ require 'rake'
 
 task :populate_devs => :environment do
 
-ProgrammingLanguage.create(name: "Ruby")
-ProgrammingLanguage.create(name: "Kotlin")
-ProgrammingLanguage.create(name: "PHP")
-ProgrammingLanguage.create(name: "Scala")
-ProgrammingLanguage.create(name: "Java")
-ProgrammingLanguage.create(name: "C++")
+ProgrammingLanguage.create(name: "ruby")
+ProgrammingLanguage.create(name: "kotlin")
+ProgrammingLanguage.create(name: "php")
+ProgrammingLanguage.create(name: "scala")
+ProgrammingLanguage.create(name: "java")
+ProgrammingLanguage.create(name: "c++")
 
 Language.create(code: "en")
 Language.create(code: "vn")
@@ -24,7 +24,7 @@ Language.create(code: "fr")
     languages_id_array = (1..5).to_a.sample(total_number_of_languages)
     programming_languages_id_array = (1..6).to_a.sample(total_number_of_programming_languages)
 
-    developer = Developer.create({ email: "Dev#{i+1}@abc.com" })
+    developer = Developer.create({ email: "dev#{i+1}@abc.com" })
 
     languages_id_array.each do | lang_id |
       developer.languages << Language.find_by(id: lang_id)
