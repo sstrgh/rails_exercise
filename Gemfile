@@ -15,8 +15,14 @@ gem 'bootstrap', '~> 4.0.0'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 3.7.2'
   gem 'factory_bot_rails'
+  gem 'faker'
+  # Adds support for Capybara system testing and selenium driver
+  gem 'capybara', '~> 2.16.1'
+  gem 'selenium-webdriver', '~> 3.8.0'
+  # Easy installation and use of chromedriver to run system tests with Chrome
+  gem 'chromedriver-helper', '~> 1.1.0'
 end
 
 group :development do
@@ -24,7 +30,6 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'faker'
   gem 'pry-rails'
   gem 'pry-doc'
   gem 'pry-stack_explorer'
