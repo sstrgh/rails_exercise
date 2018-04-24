@@ -28,8 +28,11 @@
   <br>
 
   <div class="row">
+    <div class="col-7">
+      <h1 class="h1"><%= @search_header%></h1>
+    </div>
     <div class="col">
-      <h1 class="display-6"><%= @search_header%></h1>
+      <h1 class="h5 float-right counter"><%= @developers.count%> Developers</h1>
     </div>
   </div>
 
@@ -49,7 +52,7 @@
             <tr>
               <td><%= developer.id %></td>
               <td><%= developer.email %></td>
-              <td><%= developer.programming_languages.map(&:name).join(", ") %></td>
+              <td><%= developer.programming_languages.map(&:name).join(", ").titleize %></td>
               <td><%= developer.languages.map(&:code).join(", ")  %></td>
             </tr>
           <% end %>
@@ -57,5 +60,5 @@
       </table>
     </div>
   </div>
-  
+
 </div>
