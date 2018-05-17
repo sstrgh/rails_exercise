@@ -1,13 +1,10 @@
-## Local development
+# A Developers Listing
+#### [Grep-Devs](https://grep-devs.herokuapp.com/) on Heroku
 
-### Required software
-
-* Ruby 2.5.1
-* Ruby on Rails 5.1.5
-* PostgreSQL 9.5 or later
-
-### Database setup
-
-```shell
-bin/rails db:setup
-```
+## Features
+1. A listings web application that can allow users to 
+    - search for developers by the programming language they use.
+    - search for developers by programming language and communication language.
+2. There are integrations & unit tests
+3. Search terms should persist once search is done
+4. Has a rake task to populate table with developers, communications languages & programming languages
